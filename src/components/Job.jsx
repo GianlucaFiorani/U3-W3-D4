@@ -8,7 +8,7 @@ import { addToFaoritesAction, removeFromFavoritesAction } from "../redux/action"
 const Job = ({ data, h, i }) => {
   const dispatch = useDispatch();
   const [heart, setHeart] = useState(true);
-  const jobs = useSelector((state) => state.jobs.content);
+  const jobs = useSelector((state) => state.favorites.content);
 
   useEffect(() => {
     jobs.map((jobData) => jobData._id === data._id && setHeart(false));

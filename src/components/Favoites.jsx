@@ -5,7 +5,7 @@ import { HouseDoor } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
 const Favorites = () => {
-  const jobs = useSelector((state) => state.jobs.content);
+  const jobs = useSelector((state) => state.favorites.content);
   return (
     <Container className="mt-5">
       <Link to={"/"} className="position-absolute top-0 start-0 p-3 fs-2">
